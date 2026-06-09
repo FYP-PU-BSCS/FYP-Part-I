@@ -127,11 +127,7 @@ const App = () => {
               />
             )}
 
-            {/* Error / Placeholder Page */}
-            {!["Dashboard", "Priority Triage", "Child Registry", "Certificates", "Learn / Training", "Analytics", "Field Teams", "Settings"].includes(activePage) && (
-              <div className="h-full border-4 border-dashed border-slate-200 rounded-[40px] flex items-center justify-center min-h-[400px]">
-                 <p className="font-black text-slate-300 text-3xl uppercase">{activePage} PAGE</p>
-              </div>
+            
             )}
           </div>
         </main>
