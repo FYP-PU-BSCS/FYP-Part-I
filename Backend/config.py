@@ -2,7 +2,6 @@ import os
 from datetime import timedelta
 from dotenv import load_dotenv
 
-# Load environment variables from the .env file
 load_dotenv()
 
 class Config:
@@ -13,8 +12,7 @@ class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY', 'dev-secret-key-change-in-production')
     FLASK_ENV = os.environ.get('FLASK_ENV', 'development')
     
-    # Database settings: Exclusively using PostgreSQL
-    DATABASE_URL = os.environ.get('DATABASE_URL', 'postgresql://postgres:postgresql@localhost:5432/smart_polio_reporting_monitoring')
+    DATABASE_URL = os.environ.get('DATABASE_URL)
     SQLALCHEMY_DATABASE_URI = DATABASE_URL
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     
